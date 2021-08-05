@@ -30,7 +30,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.matrics import accuracy_score
 def naive_bayes_classifier(features):
     cls = GaussianNB()
-    cls.fit(feature_Strain, label_train)
+    cls.fit(feature_train, label_train)
     pred = prediction(feature_test)
     accuracy = accuracy_score(feature_test, label_test)
     return pred, accuracy
