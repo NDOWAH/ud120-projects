@@ -29,10 +29,9 @@ features_train, features_test, labels_train, labels_test = preprocess()
 from sklearn.naive_bayes import GaussianNB
 def naive_bayes_classifier(features):
     cls = GaussianNB()
-    cls.fit(feature_train, label_train)
+    cls.fit(feature_Strain, label_train)
     pred = prediction(feature_test)
     return pred
 
 #########################################################
-
 
