@@ -27,7 +27,11 @@ clf.fit(feature_train,feature_test)
 
 #########################################################
 ### your code goes here ###
+from sklearn.metrics import accuracy_score
+acc = accuracy_score(pred, labels_test)
 
+def submitAccuracy():
+    return acc
 #########################################################
 
 
