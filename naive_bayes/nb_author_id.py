@@ -23,7 +23,6 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 #########################################################
 ### your code goes here ###
-<<<<<<< HEAD
 from sklearn.naive_bayes import GaussianNB
 from sklearn.matrics import accuracy_score
 def naive_bayes_classifier(features):
@@ -33,10 +32,6 @@ def naive_bayes_classifier(features):
     accuracy = accuracy_score(features_test, labels_test)
     return pred, accuracy
 
-
-||||||| 9ee2a2e
-
-=======
 from sklearn.naive_bayes import GaussianNB
 from sklearn.matrics import accuracy_score
 def naive_bayes_classifier(features):
@@ -45,7 +40,7 @@ def naive_bayes_classifier(features):
     pred = prediction(feature_test)
     accuracy = accuracy_score(feature_test, label_test)
     return pred, accuracy
->>>>>>> 391b41c030416c3bfb4e5db44bffb1751e8133ff
 
+print(naive_bayes_classifier(features_test))
 #########################################################
 
